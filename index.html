@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simulação de um braço robótivo biartuculado em duas dimensões</title>
+    <script src="https://cdn.rawgit.com/mrdoob/three.js/r125/build/three.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="carregarValor()">
+    <div id="corpo">
+        <h1> Simulação do movimento do Braço Robótico</h1>
+
+        <div id="entrada">
+            <h2>Insira os valores do seu braço robótico:</h2>
+            <input placeholder="Comp do Braço 1 (cm)" id="l1" type="number">
+            <input placeholder="Comp do Braço 2 (cm)" id="l2" type="number">
+            <input placeholder="Massa do Braço 01 (kg)" id="massa1" name="massa" type="number">
+            <input placeholder="Massa do Braço 02 (kg)" id="massa2" name="massa" type="number">
+            <button id="botao_play" type="button" onclick="play_animation(), play_grafic()">Iniciar Simulação</button>
+            <button id="botao_restart" type="button" onclick="location.reload(), salvarValor()">Reiniciar </button>
+
+            <div id="img1">
+                <img src="imgs/esquema_do_braço.png" alt="Esquema do braço robótico">
+            </div>
+
+            <p id="titulo01">Insira os valores da equação polinomail que representa o movimento angular das rótulas A e B:</p>
+            <p id="eq_teta01"> Equação polinomail de Teta 01:</p>
+            <input type="number" id="a1" placeholder="a"><p id="a1_">x⁶ + </p>
+            <input type="number" id="b1" placeholder="b"><p id="b1_">x⁵ + </p>
+            <input type="number" id="c1" placeholder="c"><p id="c1_">x⁴ + </p>
+            <input type="number" id="d1" placeholder="d"><p id="d1_">x³ + </p>
+            <input type="number" id="e1" placeholder="e"><p id="e1_">x² + </p>
+            <input type="number" id="f1" placeholder="f"><p id="f1_">x + </p>
+            <input type="number" id="g1" placeholder="g"><p id="g1_">
+
+            <p id="eq_teta02"> Equação polinomail de Teta 02:</p>
+            <input type="number" id="a2" placeholder="a"><p id="a2_">x⁶ + </p>
+            <input type="number" id="b2" placeholder="b"><p id="b2_">x⁵ + </p>
+            <input type="number" id="c2" placeholder="c"><p id="c2_">x⁴ + </p>
+            <input type="number" id="d2" placeholder="d"><p id="d2_">x³ + </p>
+            <input type="number" id="e2" placeholder="e"><p id="e2_">x² + </p>
+            <input type="number" id="f2" placeholder="f"><p id="f2_">x +</p>
+            <input type="number" id="g2" placeholder="g"><p id="g2_">
+
+
+        </div>
+        <div id="window">
+            <div id="animation">
+                <canvas id="canvas"></canvas>
+            </div>
+        </div>
+
+        <button id="botao_pause" type="button" onclick="botao_pause()">Pausar Simulação</button>
+
+
+        <div id="window_graf">
+            <div id="animation_graf">
+                <canvas id="canvas"></canvas>
+            </div>
+        </div>
+
+        
+        <div id="tela_time">
+            <div id="angulo1">Teta 01</div>
+            <div id="angulo2">Teta 02</div>
+            <div id="vel_angulo2">Vel Teta 02</div>
+            <div id="ace_angulo2">Ace Teta 02</div>
+            <div id="vel">Velocidade do Braço</div>
+            <div id="acel">Aceleração do Braço</div>
+            <div id="time">Tempo</div>
+        </div>
+
+        <div id="tela_vel">
+            <div id="Rbx_"></div>
+            <div id="Rby_"></div>
+            <div id="T2_"></div>
+            <div id="Rax_"></div>
+            <div id="Ray_"></div>
+            <div id="T1_"></div>
+
+            <div id="tela_velc">
+                <div id="Rbx">Reação Horizontal em B: N.nn N</div>
+                <div id="Rby">Reação Vertical em B</div>
+                <div id="T2">Torque do motor em B</div>
+                <div id="Rax">Reação Horizontal em A</div>
+                <div id="Ray">Reação Vertical em A</div>
+                <div id="T1">Torque do motor em A</div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <footer>
+        © Victor Franke
+    </footer>
+    
+    <script src="animation.js"></script>
+</body>
+</html>

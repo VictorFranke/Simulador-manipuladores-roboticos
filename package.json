@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "mathjs": "^11.8.0",
+    "three": "^0.152.2"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0"
+  }
+}

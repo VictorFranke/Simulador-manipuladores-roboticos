@@ -1,0 +1,185 @@
+body{
+    background-color: rgb(0, 0, 124);
+}
+#corpo{
+    margin-left: 250px;
+    margin-right: 250px;
+    position: absolute;
+    height: 1100px;
+    width: 1000px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+}
+
+#entrada{
+    height: 560px;
+    border: 2px solid black;
+    margin-left: 50px;
+    margin-right: 50px;
+} h2{margin-left: 10px;}
+
+#l1, #l2, #massa1, #massa2{
+    position: absolute;
+    height: 15px;
+    width: 180px;
+    margin-left: 10px;
+} #l1{margin-top: 5px;} #l2{margin-top: 30px;} #massa1{margin-top: 55px;} #massa2{margin-top: 80px;}
+
+#botao_play, #botao_restart{
+    border: 1px solid black;
+    border-radius: 5%;
+    background-color: blue;
+    color: white;
+    position: absolute;
+    height: 20px;
+    width: 190px;
+    margin-left: 10px;
+}#botao_play{margin-top: 110px;} #botao_restart{margin-top: 135px;}
+
+h1{
+    text-align: center;
+}
+
+img{
+    margin-top: -30px;
+    margin-left: 450px;
+    position: absolute;
+    width: 400px;
+    border: 2px solid black;
+}
+
+#titulo01{position:absolute; margin-top: 250px;margin-left: 10px;}
+#eq_teta01{position:absolute; margin-top: 280px; margin-left: 15px;}
+#eq_teta02{position:absolute; margin-top: 340px; margin-left: 15px;}
+
+#a1, #a1_, #b1, #b1_, #c1, #c1_, #d1, #d1_, #e1, #e1_, #f1, #f1_, #g1, #g1_{
+    position: absolute;
+    width: 70px;
+    margin-top: 305px;
+} #a1, #a2{margin-left: 10px;} #a1_,#a2_{margin-left: 90px;} #b1,#b2{margin-left: 120px;} #b1_,#b2_{margin-left: 200px;} #c1,#c2{margin-left: 230px;} #c1_,#c2_{margin-left: 310px;} #d1,#d2{margin-left: 340px;} #d1_,#d2_{margin-left: 420px;} #e1,#e2{margin-left: 450px;} #e1_,#e2_{margin-left: 530px;} #f1,#f2{margin-left: 570px;} #f1_,#f2_{margin-left: 650px;} #g1,#g2{margin-left: 670px;}
+
+#a2, #a2_, #b2, #b2_, #c2, #c2_, #d2, #d2_, #e2, #e2_, #f2, #f2_, #g2, #g2_{
+    position: absolute;
+    width: 70px;
+    margin-top: 360px;
+}
+
+#botao_pause{
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    background-color: #009a00;
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    margin-top: -415px;
+    margin-left: 50px;
+}
+
+#animation{
+    margin-top: -150px;
+    margin-left: 5px;
+    height: 400px;
+    width: 400px;
+    text-align: center;
+    align-items: center;
+    position:absolute;
+}
+
+#window{
+    background-color: white;
+    margin-left: 50px;
+    margin-top: 30px;
+    text-align: center;
+    height: 410px;
+    width: 410px;
+    border: 2px solid black;
+}
+
+#window_graf{
+    position: absolute;
+    background-color: white;
+    margin-left: 470px;
+    margin-top: -413px;
+    text-align: center;
+    height: 265px;
+    width: 475px;
+    border: 2px solid black;
+}
+
+#animation_graf{
+    margin-top: -150px;
+    margin-left: 5px;
+    height: 255px;
+    width: 465px;
+    text-align: center;
+    align-items: center;
+    position:absolute;
+}
+#tela_time{
+    text-align: justify;
+    height: 137px;
+    width: 210px;
+    position:absolute;
+    margin-left: 470px;
+    margin-top: -140px;
+    border: 2px solid black;
+}
+
+#tela_vel{
+    text-align: justify;
+    height: 137px;
+    width: 260px;
+    position:absolute;
+    margin-left: 685px;
+    margin-top: -140px;
+    border: 2px solid black;
+}#tela_velc{margin-left: 30px;}
+#Rbx_,#Rby_,#T2_,#Rax_,#Ray_,#T1_{
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+}
+#Rbx_{
+    margin-top: 2px;
+    margin-left: 5px;
+    background-color: #00ff00
+}
+#Rby_{
+    margin-top: 20px;
+    margin-left: 5px;
+    background-color: #ffff00
+}
+#T2_{
+    margin-top: 38px;
+    margin-left: 5px;
+    background-color: #0000ff
+}
+#Rax_{
+    margin-top: 56px;
+    margin-left: 5px;
+    background-color: #ff0000
+}
+#Ray_{
+    margin-top:74px;
+    margin-left: 5px;
+    background-color: #ff7700
+}
+#T1_{
+    margin-top: 92px;
+    margin-left: 5px;
+    background-color: #ff00f2
+}
+footer{
+    height: 30px;
+    margin-top: 1115px;
+    position: absolute;
+    margin-left: 750px;
+    font-style: italic;
+    color: white;
+}
+#teste{
+    color: rgb(255, 119, 0);
+}
