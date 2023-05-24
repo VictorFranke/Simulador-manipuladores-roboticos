@@ -17,10 +17,11 @@
             <input placeholder="Massa do Braço 01 (kg)" id="massa1" name="massa" type="number">
             <input placeholder="Massa do Braço 02 (kg)" id="massa2" name="massa" type="number">
             <button id="botao_play" type="button" onclick="play_animation(), play_grafic()">Iniciar Simulação</button>
-            <button id="botao_restart" type="button" onclick="location.reload(), salvarValor()">Reiniciar </button>
+            <button id="botao_restart" type="button" onclick="location.reload()">Reiniciar </button>
+            <button id="botao_save" type="button" onclick="salvarValor()">Salvar Valores inseridos </button>
 
             <div id="img1">
-                <img src="https://lh3.googleusercontent.com/pw/AJFCJaVx0xE2OEj9-0941o-NO7Rw0nEM5Mi6hgRkMmQWim-yPL7ZvyYCgIgbtet8qANsbd9-Wth7uvJz_pUsXeCuec62Trk7MoohpWlNulJ7xruXrtQIN-lC_U5Fg0w-fZbUIKZ_we63BZ0--8M0ffnNOmg=w734-h444-s-no?authuser=0">
+                <img src="https://lh3.googleusercontent.com/pw/AJFCJaXo-58TvzVokMTned39AVuqZkmdlA1JkID1BKpG-9S5t4BzWqwccLgGsWQ50tHl1ywpuzDyiP0TKolqZ3yqKQCR2Ljc9iq-D8tIZEiBNfJGCvNTNYJfyKWxkY5ruO6Z3necg7fCSda7vz9mJFjcSRM=w734-h444-s-no?authuser=0" alt="Esquema do braço robótico">
             </div>
 
             <p id="titulo01">Insira os valores da equação polinomail que representa o movimento angular das rótulas A e B:</p>
@@ -52,12 +53,14 @@
 
         <button id="botao_pause" type="button" onclick="botao_pause()">Pausar Simulação</button>
 
-
-        <div id="window_graf">
-            <div id="animation_graf">
-                <canvas id="canvas"></canvas>
+        <div id="ref">
+            <div id="window_graf">
+                <div id="animation_graf">
+                    <canvas id="canvas"></canvas>
+                </div>
             </div>
         </div>
+        
 
         
         <div id="tela_time">
@@ -79,7 +82,7 @@
             <div id="T1_"></div>
 
             <div id="tela_velc">
-                <div id="Rbx">Reação Horizontal em B: N.nn N</div>
+                <div id="Rbx">Reação Horizontal em B: N.m</div>
                 <div id="Rby">Reação Vertical em B</div>
                 <div id="T2">Torque do motor em B</div>
                 <div id="Rax">Reação Horizontal em A</div>
