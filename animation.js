@@ -282,8 +282,8 @@ function play_animation(){
           //Atualiza os valores das variáveis em tela
           document.getElementById("angulo1").innerHTML = `Ângulo θ₁ = ${teta1_g.toFixed(2)}°`;
           document.getElementById("angulo2").innerHTML = `Ângulo θ₂ = ${teta2_g.toFixed(2)}°`;
-          document.getElementById("vel_angulo2").innerHTML = `Velocidade w₂ = ${omega2_g.toFixed(2)}°`;
-          document.getElementById("ace_angulo2").innerHTML = `Aceleração w₂ = ${alfa2_g.toFixed(2)}°`;
+          document.getElementById("vel_angulo2").innerHTML = `Velocidade w₂ = ${omega2_g.toFixed(2)}° grau/s`;
+          document.getElementById("ace_angulo2").innerHTML = `Aceleração α₂ = ${alfa2_g.toFixed(2)}° grau/s²`;
           document.getElementById("time").innerHTML = `Tempo t = ${t.toFixed(2)} s`; 
           
           requestAnimationFrame(animate);
