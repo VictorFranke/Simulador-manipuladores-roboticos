@@ -1,12 +1,18 @@
 body{
     background-color: rgb(0, 0, 124);
 }
+h2{
+    font-size: 18px;
+}
+p{
+    font-size: 14px;
+}
 #corpo{
     margin-left: 250px;
     margin-right: 250px;
     position: absolute;
-    height: 1100px;
-    width: 1000px;
+    height: 1130px;
+    width: 1050px;
     background-color: rgb(255, 255, 255);
     border: 2px solid black;
 }
@@ -35,6 +41,17 @@ body{
     width: 190px;
     margin-left: 10px;
 }#botao_play{margin-top: 110px;} #botao_restart{margin-top: 135px;}
+#botao_save{
+    border: 1px solid black;
+    border-radius: 5%;
+    background-color: green;
+    color: white;
+    position: absolute;
+    height: 20px;
+    width: 190px;
+    margin-left: 10px;
+    margin-top: 160px;
+}
 
 h1{
     text-align: center;
@@ -96,44 +113,54 @@ img{
     width: 410px;
     border: 2px solid black;
 }
-
+#ref{
+    border: 2px solid black;
+    margin-left: 470px;
+    margin-top: -413px;
+    position: absolute;
+    height: 290px;
+    width: 565px;
+    background-image: url("https://lh3.googleusercontent.com/pw/AJFCJaVhcdAGcEsKq8k-74yGjUnUCgpjjgDr3Va2UMmoXDiuwM2vgXfQjYMQ-iasLzEogbohcDSjYFFnKCraWK154o379ShxaDtzs0JiylS5dPatM3Jvkf1MDHNRQn7hyERDz4T3_Sb98zB_eNVu094JP2h2=w1440-h740-s-no?authuser=0");
+    background-size: cover;
+}
 #window_graf{
     position: absolute;
     background-color: white;
-    margin-left: 470px;
-    margin-top: -413px;
+    margin-left: 25px;
+    margin-bottom: 25px;
     text-align: center;
     height: 265px;
-    width: 475px;
+    width: 515px;
     border: 2px solid black;
 }
-
 #animation_graf{
     margin-top: -150px;
     margin-left: 5px;
     height: 255px;
-    width: 465px;
+    width: 505px;
     text-align: center;
     align-items: center;
     position:absolute;
 }
 #tela_time{
+    font-size: 14px;
     text-align: justify;
     height: 137px;
     width: 210px;
     position:absolute;
     margin-left: 470px;
-    margin-top: -140px;
+    margin-top: -110px;
     border: 2px solid black;
 }
 
 #tela_vel{
+    font-size:100%;
     text-align: justify;
     height: 137px;
-    width: 260px;
+    width: 300px;
     position:absolute;
     margin-left: 685px;
-    margin-top: -140px;
+    margin-top: -110px;
     border: 2px solid black;
 }#tela_velc{margin-left: 30px;}
 #Rbx_,#Rby_,#T2_,#Rax_,#Ray_,#T1_{
